@@ -1,71 +1,150 @@
+
 * {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+header {
+    background-color: darkblue;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
-    margin: 0;
-    padding: 20px;
+    align-items: center;
+    height: 70px;
 }
-.board {
-    display: flex;
-    justify-content: center;
+
+#img1{
+    height: 50px;
     position: absolute;
-    top: 100px;
-    left: 35%;
-}
-.list {
-    background-color: #ebecf0;
-    width: 300px;
-    margin-right: 20px;
-    padding: 10px;
-    border-radius: 4px;
-}
-.list-header {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-.list-cards {
-    min-height: 100px;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #ffffff;
-    border-radius: 4px;
-}
-.add-card {
-    padding-top: 10px;
-}
-.add-card input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-.add-card button {
-    background-color: #5aac44;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.add-card button:hover {
-    background-color: #4c9c3f;
+    left: 2%;
 }
 #h1{
-    font-size: 35px;
-    font-style: oblique;
-    text-align: center;
     position: absolute;
-    left: 40%;
+    left: 6%;
+    color: wheat;
 }
-#par{
+#d1{
+    position: absolute;
+    left: 25%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+#d1:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#d2{
+    position: absolute;
+    left: 31%;
+    font-size: 20px;
+    color: white;
+}
+#d2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#d3{
+    position: absolute;
+    left: 37%;
+    font-size: 20px;
+    color: white;   
+}
+#d3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#img2{
+    height: 45px;
+    position: absolute;
+    right: 3%;
+}
+#inp{
+    height: 30px;
+    width: 200px;
+    position: absolute;
+    right: 13%;
+}
+#img3{
+    position: absolute;
+    right: 10%;
+    height: 35px;
+}
+main {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: skyblue;
+    height: 90vh;
+}
+
+.column {
+    border: 4px solid darkblue;
+    min-height: 130px;
+    min-width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.column > h3 {
+    font-size: 30px;
+    font-weight: bold;
     text-align: center;
+}
+
+.column > p {
+    padding: 8px;
+    background-color: rgb(66, 134, 161);
+    text-align: center;
+}
+
+.column > form > input {
+    padding: 10px;
+    width: 100%;
+}
+#addCard{
+    background-color: blue;
+    height: 30px;
+    width: 100px;
+    color: white;
+    border-radius: 19px;
+}
+#addCard:hover{
+    background-color: darkblue;
+    cursor: pointer;
+}
+.ticket{
+    border: 3px solid blue;
+    height: 27px; 
+    border-radius: 5px;
+}
+.delete-todo-btn{
+    background-color: blue;
+    color: white;
+    margin-top: 2px;
+    width: 60px;
+    border-radius: 3px;
+    position: relative;
+    left: 30%;
+    overflow: hidden;
+}
+.delete-todo-btn:hover{
+    background-color: darkblue;
+    cursor: pointer;
+}
+.nBtn{
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 80px;
+    margin-top: 10px;
+}
+.nBtn:hover{
+    background-color: darkblue;
+    cursor: pointer;
 }
